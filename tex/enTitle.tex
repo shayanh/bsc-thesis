@@ -4,19 +4,32 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \latinuniversity{University of Tehran}
 \latincollege{College of Engineering}
-\latinfaculty{Faculty of Engineering Science}
-\latindepartment{Algorithms and Computation}
+\latinfaculty{Faculty of Electrical and Computer Engineering}
+\latindepartment{Software Engineering}
 \latinsubject{Computer Engineering}
-\latinfield{Algorithms and Computation}
-\latintitle{Writing projects, theses and dissertations using tehran-thesis class}
-\firstlatinsupervisor{First Supervisor}
-\secondlatinsupervisor{Second Supervisor}
-\firstlatinadvisor{First Advisor}
+\latinfield{Software Engineering}
+\latintitle{Verification of Microservices}
+\firstlatinsupervisor{Dr. Hossein Hojjat}
+%\secondlatinsupervisor{Second Supervisor}
+%\firstlatinadvisor{First Advisor}
 %\secondlatinadvisor{Second Advisor}
-\latinname{Sina}
-\latinsurname{Momken}
-\latinthesisdate{May 2017}
-\latinkeywords{Writing Thesis, Template, \LaTeX, \XePersian}
+\latinname{Shayan}
+\latinsurname{Hosseini}
+\latinthesisdate{September 2020}
+\latinkeywords{Verification, Microservices, Contracts}
 \en-abstract{
-This thesis studies on writing projects, theses and dissertations using tehran-thesis class. It ...
+Many large applications are now built using collections of
+microservices, each of which is deployed in isolated containers 
+and which interact with each other through the use
+of remote procedure calls (RPCs). The use of microservices
+improves scalability – each component of an application can
+be scaled independently – and deployability. However, such
+applications are inherently distributed and current tools do not
+provide mechanisms to reason about and ensure their global
+behavior.
+In this project, we propose a system to verify microservices communications.
+Inspired by Design by Contract, our system monitor services at runtime to detect
+services that do not satisfy their contracts. Finally, we implement our system on
+some real-world microservices system and we show how we found some bugs in these systems
+without performance loss.
 }
