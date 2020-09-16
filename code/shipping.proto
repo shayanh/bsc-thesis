@@ -1,0 +1,12 @@
+service ShippingService {
+    rpc ShipOrder(ShipOrderRequest) returns (ShipOrderResponse) {}
+}
+
+message ShipOrderRequest {
+    Address address = 1;
+    repeated CartItem items = 2;
+}
+
+message ShipOrderResponse {
+    string tracking_id = 1;
+}
